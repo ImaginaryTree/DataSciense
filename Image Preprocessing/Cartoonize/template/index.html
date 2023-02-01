@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cartoonize</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="Image">
+                <h3 class="header">Live Streaming</h3>
+                <img src="{{ url_for('video_feed') }}" width="1000px" height="600px">
+            </div>
+        </div>
+
+    </div>
+    <style contenteditable style="display: block; white-space: pre;">
+        body{
+            margin: 0;
+        }
+        .header{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            background-color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            border-radius: 10px;
+        }
+    </style>
+</body>
+</html>
